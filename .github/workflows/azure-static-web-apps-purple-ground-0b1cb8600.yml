@@ -24,6 +24,6 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # For PR status/comment support
           action: "upload"
-          app_location: "/" # Or "swa-db-connections" if that’s your frontend folder
-          api_location: ""  # Set if using Azure Functions; otherwise leave blank
-          output_location: "build" # Adjust if your build outputs to a different folder
+          app_location: "/"
+          api_location: ""
+          output_location: "."
